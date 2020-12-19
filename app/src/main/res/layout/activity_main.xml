@@ -16,37 +16,53 @@
 
         <ImageView
             android:id="@+id/jerry"
-            android:transitionName="jerry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginRight="16dp"
             android:src="@drawable/jerry"
-            android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:transitionName="jerry" />
 
         <ImageView
             android:id="@+id/tom"
-            android:transitionName="jerry"
-            android:src="@drawable/tom"
             android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:layout_height="100dp"
+            android:src="@drawable/tom"
+            android:transitionName="jerry" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:layout_marginTop="16dp"
-        >
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btn_run_left"
-            android:text="Run left"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Run left" />
+
         <Button
             android:id="@+id/btn_run_rigth"
-            android:text="Run right"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Run right" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Animation" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hypno" />
 
 </LinearLayout>
